@@ -13,7 +13,7 @@ const loginForm = document.querySelector(".login-form");
 
 loginForm.addEventListener('submit', onFormSubmit);
 
-function onSubmit(e) { 
+function onFormSubmit(e) { 
     e.preventDefault();
 
     const {email, password} = e.currentTarget.elements; 
@@ -27,5 +27,5 @@ function onSubmit(e) {
 
       console.log(userData);
 
-      e.currentTarget.reset();
-  }
+      e.currentTarget.reset()
+  };
